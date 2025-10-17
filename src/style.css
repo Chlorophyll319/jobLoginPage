@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
 /* 簡易 Design System */
+body {
+  font-family: 'Chiron GoRound TC', 'Inter', sans-serif;
+}
+
 @theme {
   /* 色彩系統 */
   /* 主題色 (Primary) - 品牌主色調 #26C6D0 青綠色 */
@@ -33,7 +37,7 @@
 
   /* 點綴色 (Accent) - 強調色調 #26D0A8 翠綠色 */
   --color-accent: #26d0a8;
-  --color-accent-50: #ecfdf8;
+  --color-accent-50: #f2f2f2;
   --color-accent-100: #d1fae9;
   --color-accent-200: #a7f3d7;
   --color-accent-300: #6ee7c0;
