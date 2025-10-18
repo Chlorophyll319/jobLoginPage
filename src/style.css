@@ -51,7 +51,13 @@ body {
 
   /* Border Radius 系統 */
   --radius-none: 0px;
-  --radius: 16px;
+  --radius-sm: 8px;
+  --radius-DEFAULT: 16px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 40px;
+  --radius-full: 9999px;
 
   /* 響應式斷點 */
   --breakpoint-sm: 640px;
