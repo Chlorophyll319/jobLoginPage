@@ -1,7 +1,7 @@
 <route lang="yaml">
 meta:
   title: '登入'
-  layout: defult
+  layout: default
   # 有沒有登入都能看
   login: ''
   # 不是管理員也能看
