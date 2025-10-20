@@ -2,9 +2,20 @@
 
 /* 簡易 Design System */
 body {
-  font-family: 'Chiron GoRound TC', 'Inter', sans-serif;
+  font-family: 'Chiron GoRound TC', 'Proxima Nova', sans-serif;
 }
-
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
 @theme {
   /* 色彩系統 */
   /* 主題色 (Primary) - 品牌主色調 #26C6D0 青綠色 */

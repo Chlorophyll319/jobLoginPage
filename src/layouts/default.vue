@@ -10,7 +10,7 @@ meta:
 <template>
   <div class="min-h-screen bg-accent-50">
     <!-- 導覽列 -->
-    <nav class="bg-white shadow-sm">
+    <nav class="sticky top-0 bg-white shadow-sm z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <!-- Logo 與導覽連結 -->
@@ -25,7 +25,7 @@ meta:
     </nav>
 
     <!-- 頁面內容 -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main>
       <router-view />
     </main>
   </div>
