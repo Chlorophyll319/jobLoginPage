@@ -10,7 +10,7 @@ meta:
   <div class="w-full relative">
     <!-- Hero Section with Video Background -->
     <section
-      class="absolute top-0 left-0 w-screen h-screen min-h-[600px] flex items-center justify-center overflow-hidden z-50 rounded-b-[16px] -translate-y-16"
+      class="absolute top-0 left-0 w-screen h-screen min-h-[600px] flex items-left justify-top overflow-hidden z-50 rounded-b-[16px] -translate-y-16"
     >
       <!-- Video Background -->
       <div class="absolute inset-0 z-0">
@@ -34,8 +34,8 @@ meta:
       </div>
 
       <!-- Content -->
-      <div class="relative z-[2] text-white px-8 max-w-6xl mx-auto">
-        <img src="@\assets\logo.png" alt="logo" />
+      <div class="relative z-[2] text-white max-w-6xl ml-[15%] mt-[10%]">
+        <img src="@\assets\logo.png" alt="logo" class="h-[60px] mb-3" />
         <div class="relative">
           <h1
             class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight uppercase tracking-wider text-left relative z-10"
