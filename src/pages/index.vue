@@ -10,7 +10,7 @@ meta:
   <div class="w-full relative">
     <!-- Hero Section with Video Background -->
     <section
-      class="absolute top-0 left-0 w-screen h-screen min-h-[600px] flex items-left justify-top overflow-hidden z-50 rounded-b-[16px] -translate-y-16"
+      class="absolute top-0 left-0 w-screen h-screen min-h-[600px] flex md:items-start md:justify-start items-center justify-center overflow-hidden z-50 rounded-b-[16px] -translate-y-16"
     >
       <!-- Video Background -->
       <div class="absolute inset-0 z-0">
@@ -27,14 +27,14 @@ meta:
 
       <!-- DIGITAL AGENCY - Rotated -->
       <div
-        class="absolute left-1 top-1/2 -translate-y-1/2 -rotate-90 text-white z-[2] tracking-wider flex items-center gap-3"
+        class="absolute left-1 top-1/2 -translate-y-1/2 -rotate-90 text-white z-[2] tracking-wider md:flex items-center gap-3 hidden"
       >
         <span class="w-[52px] h-0 border-t-2 border-white inline-block" />
         <span>DIGITAL AGENCY</span>
       </div>
 
       <!-- Content -->
-      <div class="relative z-[2] text-white max-w-6xl ml-[15%] mt-[10%]">
+      <div class="relative z-[2] text-white max-w-6xl md:ml-[15%] md:mt-[10%] px-6 md:px-0">
         <img src="@\assets\logo.png" alt="logo" class="h-[60px] mb-3" />
         <div class="relative">
           <h1
@@ -100,10 +100,10 @@ meta:
 
     <!-- AWARDS Section -->
     <section
-      class="w-[90%] py-20 px-8 bg-white rounded-bl-[16px] rounded-tl-[16px] rounded-br-[16px] relative z-20"
+      class="mx-auto w-[90%] md:ml-[10%] py-12 md:py-20 px-4 md:px-8 bg-white rounded-bl-[16px] rounded-tl-[16px] rounded-br-[16px] relative z-20"
     >
-      <div class="max-w-6xl mx-auto flex gap-2 items-start">
-        <div class="w-[416px] flex-shrink-0">
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 lg:gap-2 items-start">
+        <div class="w-full lg:w-[416px] flex-shrink-0">
           <h2
             class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 uppercase tracking-wider text-gray-800"
           >
@@ -118,7 +118,7 @@ meta:
           </p>
         </div>
 
-        <div class="flex-1 grid grid-cols-2 gap-2">
+        <div class="flex-1 grid grid-cols-2 gap-2 w-full">
           <img
             src="@/assets/awards-image.png"
             alt="Award 1"
