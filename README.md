@@ -2,7 +2,7 @@
 
 一個使用 Vue 3 和現代化網頁技術打造的響應式網站。
 
-public\README\image.png
+![image](public\README\image.png)
 
 ## 🚀 專案特色
 
