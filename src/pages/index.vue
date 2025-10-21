@@ -35,7 +35,7 @@ meta:
 
       <!-- Content -->
       <div class="relative z-[2] text-white max-w-6xl md:ml-[15%] md:mt-[10%] px-6 md:px-0">
-        <img src="@\assets\logo.png" alt="logo" class="h-[60px] mb-3" />
+        <img src="@/assets/logo.png" alt="logo" class="h-[60px] mb-3" />
         <div class="relative">
           <h1
             class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight uppercase tracking-wider text-left relative z-10"
@@ -49,7 +49,7 @@ meta:
       </div>
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2]">
         <router-link to="/login">
-          <img src="@\assets\food.png" alt="沙拉" class="m-auto" />
+          <img src="@/assets/food.png" alt="沙拉" class="m-auto" />
         </router-link>
       </div>
     </section>
@@ -178,7 +178,7 @@ meta:
           <MemberCard v-for="service in services" :key="service.title">
             <template #icon>
               <img
-                :src="`/src/assets/member/${service.title}.png`"
+                :src="getImageUrl(service.title)"
                 :alt="service.title"
                 class="w-full h-full object-contain"
               />
@@ -210,12 +210,12 @@ meta:
       <div class="max-w-6xl mx-auto">
         <div class="max-w-3xl mx-auto grid md:grid-cols-[200px_1fr] gap-12 items-center">
           <div class="flex flex-col items-center justify-center">
-            <img src="@\assets\Tony Ng.png" alt="Tony Ng" />
+            <img src="@/assets/Tony Ng.png" alt="Tony Ng" />
             <h3>Tony Ng</h3>
             <p>Founder & Creative Director</p>
           </div>
           <div class="text-center md:text-left flex flex-col justify-center">
-            <img src="@\assets\left-quote.png" alt="雙引號" class="w-fit m-auto" />
+            <img src="@/assets/left-quote.png" alt="雙引號" class="w-fit m-auto" />
 
             <p class="text-[22px] tracking-[2px] font-normal opacity-90 leading-[2em]">
               A great digital work isn't about designing beautiful pages purely. It is about context
@@ -249,7 +249,7 @@ meta:
             lacus. Cras lobortis molestie faucibus.
           </p>
         </div>
-        <img src="@\assets\brend.png" alt="合作品牌" />
+        <img src="@/assets/brend.png" alt="合作品牌" />
       </div>
     </section>
 
@@ -277,4 +277,9 @@ const services = ref([
   { title: 'digital transformation' },
   { title: 'customer loyalty' },
 ])
+
+// 動態載入圖片的函數
+const getImageUrl = (name) => {
+  return new URL(`../assets/member/${name}.png`, import.meta.url).href
+}
 </script>
