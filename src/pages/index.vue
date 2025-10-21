@@ -44,13 +44,11 @@ meta:
             AMAZING <br />
             DIGITAL EXPERIENCES
           </h1>
-          <span
-            class="absolute left-0 bottom-2 w-full h-[10px] bg-primary"
-          />
+          <span class="absolute left-0 bottom-2 w-full h-[10px] bg-primary" />
         </div>
       </div>
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2]">
-        <router-link>
+        <router-link to="/login">
           <img src="@\assets\food.png" alt="沙拉" class="m-auto" />
         </router-link>
       </div>
