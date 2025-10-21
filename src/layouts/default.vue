@@ -17,7 +17,7 @@ meta:
           <div class="flex items-center space-x-8">
             <!-- Logo -->
             <router-link to="/" class="flex items-center h-full py-3">
-              <img src="@/assets/logo-color.png" alt="logo" class="h-full w-auto" />
+              <img src="@/assets/Logo-color.png" alt="logo" class="h-full w-auto" />
             </router-link>
           </div>
         </div>
